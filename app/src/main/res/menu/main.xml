@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.coresoft.rfidread.MainActivity" >
+
+    <item
+        android:id="@+id/action_jinchang"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/liucheng_chuchangjianyan"/>
+    <item
+        android:id="@+id/action_chuchang"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/liucheng_jinchangjianyan"/>
+
+    <item
+        android:id="@+id/action_shigong"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_shigong_record"/>
+
+    <item
+        android:id="@+id/action_xiufu"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_xiufu_record"/>
+
+</menu>

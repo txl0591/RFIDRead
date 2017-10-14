@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="UserInfo"
+        android:title="@string/pref_menu_user" >
+    <PreferenceScreen
+        android:key="@string/key_pref_menu_login_user">
+    </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="CardInfo"
+        android:title="@string/pref_menu_info" >
+        <PreferenceScreen
+            android:key="@string/key_pref_menu_cardinfo"
+            android:title="@string/pref_card_read" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="OperInfo"
+        android:title="@string/pref_menu_oper" >
+        <PreferenceScreen
+            android:key="@string/key_pref_menu_chuchang"
+            android:title="@string/liucheng_chuchangjianyan" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="@string/key_pref_menu_jingchang"
+            android:title="@string/liucheng_jinchangjianyan" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="@string/key_pref_menu_shigongjilu"
+            android:title="@string/liucheng_shigojilu" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="@string/key_pref_menu_xiufujilu"
+            android:title="@string/liucheng_xiufujilu" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="Setting"
+        android:title="@string/pref_menu_setting" >
+        <PreferenceScreen
+            android:key="@string/key_pref_menu_sysinfo"
+            android:title="@string/pref_title_sys_info" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

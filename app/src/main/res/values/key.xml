@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="key_nfc_choose">nfc_choose</string>
+    <string name="key_setting_info">setting_info</string>
+    <string name="key_card_read">card_read</string>
+    <string name="key_card_write">card_write</string>
+    <string name="key_sys_version">sys_version</string>
+    
+
+    <string name="key_read_chipid">read_chipid</string> 
+    <string name="key_read_shengchengdangwei">read_shengchengdangwei</string>
+    <string name="key_read_gongchengmingcheng">read_gongchengmingcheng</string>
+    <string name="key_read_guanpianleixing">read_guanpianleixing</string>
+    <string name="key_read_huanhao">read_huanhao</string>
+    <string name="key_read_fenkuaihao">read_fenkuaihao</string>
+    <string name="key_read_chanpinghegezheng">read_chanpinghegezheng</string>
+    <string name="key_read_shengchangrenwudanhao">read_shengchangrenwudanhao</string>
+    <string name="key_read_shengchangriqi">read_shengchangriqi</string>
+    <string name="key_read_shengchangbanci">read_shengchangbanci</string>
+    <string name="key_read_rumohunningtubiaomianwendu">read_rumohunningtubiaomianwendu</string>
+    <string name="key_read_gangmobianhao">_read_gangmobianhao</string>  
+    	<string name="key_read_gangmojiance">read_gangmojiance</string> 
+    <string name="key_read_gujiabianhao">read_gujiabianhao</string>
+		<string name="key_jyjc_gangwangjiajiance">jyjc_gangwangjiajiance</string>
+    <string name="key_read_touliaoqingdan">read_touliaoqingdan</string>
+    <string name="key_read_yaohao">read_yaohao</string>
+    	<string name="key_read_yaowenjiankongshuju">read_yaowenjiankongshuju</string>
+    <string name="key_read_ruyaoshijian">read_ruyaoshijian</string>
+    <string name="key_read_chuyaoshijian">read_chuyaoshijian</string>
+    <string name="key_read_tuomoqiwen">read_tuomoqiwen</string>
+    <string name="key_read_tuomoguanpianwendu">read_tuomoguanpianwendu</string>
+    <string name="key_read_shuiyangchihao">read_shuiyangchihao</string>
+    	<string name="key_read_shuiyangchijiankongshuju">read_shuiyangchijiankongshuju</string> 
+    <string name="key_read_shuiyangchishijian">read_shuiyangchishijian</string>
+    <string name="key_read_chushuiyangchishijian">read_chushuiyangchishijian</string> 
+    <string name="key_read_jingchuruchang">read_jingchuruchang</string>
+    <string name="key_read_yanghujixiubu">read_yanghujixiubu</string>
+    <string name="key_read_duichangyanghu">read_duichangyanghu</string>
+    <string name="key_read_guanpianxiufu">read_guanpianxiufu</string>
+    <string name="key_read_jianliqueren">read_jianliqueren</string>
+
+    <string name="key_read_zhibaozhiliao">read_zhibaozhiliao</string>
+		<string name="key_zb_shuini">zb_shuini</string>
+		<string name="key_zb_gangjing">zb_gangjing</string>
+		<string name="key_zb_hunningtuyongsha">zb_hunningtuyongsha</string>
+		<string name="key_zb_hunningtuyongshi">zb_hunningtuyongshi</string>	
+		<string name="key_zb_kuangzaweifeng">zb_kuangzaweifeng</string>
+		<string name="key_zb_fengmeihui">zb_fengmeihui</string>
+		<string name="key_zb_waijiaji">zb_waijiaji</string>
+		<string name="key_zb_qita">zb_qita</string>
+
+    <string name="key_read_jianyanjiance">read_jianyanjiance</string>
+        <string name="key_jyjc_kanyaqiangdu">jyjc_kanyaqiangdu</string>
+        	<string name="key_read_kanyaqiangduquxian">read_kanyaqiangduquxian</string>   
+		<string name="key_jyjc_kangshengjiance">jyjc_kangshengjiance</string>
+		<string name="key_jyjc_qitajiance">jyjc_qitajiance</string>		
+		<string name="key_jyjc_chuchangjianyan">jyjc_chuchangjianyan</string> 
+        <string name="key_jyjc_xingshijianyan">jyjc_xingshijianyan</string>
+    
+    
+    
+    <string name="key_read_duichangmingcheng">read_duichangmingcheng</string>
+    <string name="key_read_yingyongbiaoduan">read_yingyongbiaoduan</string>
+    <string name="key_read_kangyabaogao">read_kangyabaogao</string>
+    <string name="key_read_qiangdudengji">read_qiangdudengji</string>
+    <string name="key_read_jianceriqi">read_jianceriqi</string>
+    <string name="key_read_kanyaqiangdu">read_kanyaqiangdu</string>
+    <string name="key_read_chuchangjianyan">read_chuchangjianyan</string>    
+    <string name="key_read_qiangdupingdingjieguo">read_qiangdupingdingjieguo</string>
+    <string name="key_read_waiguangzhiliang">read_waiguangzhiliang</string>
+    <string name="key_read_chicunpiancha">read_chicunpiancha</string>
+    <string name="key_read_shuipingpingzhuang">read_shuipingpingzhuang</string>
+        
+    <string name="key_read_shengchangbianhao">read_shengchangbianhao</string>
+   	<string name="key_read_jihuadanhao">read_jihuadanhao</string>
+   	<string name="key_read_jihuashengchangshijian">read_jihuashengchangshijian</string>
+   	<string name="key_read_shijishengchangshijian">read_shijishengchangshijian</string>
+
+    <string name="key_pref_menu_login_user">pref_menu_user</string>
+    <string name="key_pref_menu_info">pref_menu_info</string>
+        <string name="key_pref_menu_cardinfo">pref_menu_cardinfo</string>
+    <string name="key_pref_menu_oper">pref_menu_oper</string>
+        <string name="key_pref_menu_chuchang">pref_menu_chuchang</string>
+        <string name="key_pref_menu_jingchang">pref_menu_jingchang</string>
+        <string name="key_pref_menu_shigongjilu">pref_menu_shigongjilu</string>
+        <string name="key_pref_menu_xiufujilu">pref_menu_xiufujilu</string>
+    <string name="key_pref_menu_setting">pref_menu_setting</string>
+        <string name="key_pref_menu_sysinfo">pref_menu_sysinfo</string>
+</resources>

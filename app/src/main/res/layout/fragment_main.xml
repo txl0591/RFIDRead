@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F3F6"
+     >
+
+    <!--<LinearLayout style="@style/wrap_layout" >-->
+        <!--&lt;!&ndash; 上圆角&ndash;&gt;-->
+        <!--<LinearLayout style="@style/top_layout"-->
+            <!--android:id="@+id/pref_card_read">-->
+            <!--<TextView style="@style/usertext" android:text="@string/pref_card_read" />-->
+          	<!--<ImageView style="@style/img_arrow"/>-->
+        <!--</LinearLayout>-->
+        <!--&lt;!&ndash; 分割线 &ndash;&gt;-->
+          <!--<View style="@style/bg_line"/>-->
+          <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+       <!--<LinearLayout style="@style/mid_layout"-->
+           <!--android:id="@+id/pref_card_zhuchang">-->
+            <!--<TextView style="@style/usertext" android:text="@string/pref_card_zhuchang" />-->
+          	<!--<ImageView style="@style/img_arrow"/>-->
+        <!--</LinearLayout>-->
+             <!--<View style="@style/bg_line"/>-->
+          <!--&lt;!&ndash; 下圆角&ndash;&gt;-->
+       <!--<LinearLayout style="@style/bottom_layout"-->
+           <!--android:id="@+id/pref_card_xianchang">-->
+            <!--<TextView style="@style/usertext" android:text="@string/pref_card_xianchang" />-->
+          	<!--<ImageView style="@style/img_arrow"/>-->
+        <!--</LinearLayout>-->
+             <!---->
+    <!--</LinearLayout>-->
+
+    <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/top_layout"
+            android:id="@+id/pref_card_read">
+            <TextView style="@style/usertext" android:text="@string/pref_card_read"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+     <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout"
+            android:id="@+id/pref_setting_info">
+            <TextView style="@style/usertext" android:text="@string/pref_setting_info"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

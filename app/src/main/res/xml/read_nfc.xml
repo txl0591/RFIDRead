@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >    
+    <PreferenceCategory
+        android:key="CardInfo"
+        android:title="@string/pref_title_guanpian_info" >    
+	<PreferenceScreen
+        android:key="@string/key_read_shengchangbianhao"
+        android:title="@string/nfc_read_shengchangbianhao"
+        >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_read_jihuadanhao"
+        android:title="@string/nfc_read_jihuadanhao" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_read_guanpianleixing"
+        android:title="@string/nfc_read_guanpianleixing" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_read_gangmobianhao"
+        android:title="@string/nfc_read_gangmobianhao" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_read_jihuashengchangshijian"
+        android:title="@string/nfc_read_jihuashengchangshijian" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_read_shijishengchangshijian"
+        android:title="@string/nfc_read_shijishengchangshijian" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_read_shengchangbanci"
+        android:title="@string/nfc_read_shengchangbanci" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_read_yaohao"
+        android:title="@string/nfc_read_yaohao" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_read_ruyaoshijian"
+        android:title="@string/nfc_read_ruyaoshijian" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_read_chuyaoshijian"
+        android:title="@string/nfc_read_chuyaoshijian" >
+    </PreferenceScreen>
+    </PreferenceCategory>    
+</PreferenceScreen>

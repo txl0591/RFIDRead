@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:key="jianyanjiance"
+        android:title="@string/nfc_read_jianyanjiance" >    
+    <PreferenceScreen
+        android:key="@string/key_jyjc_kanyaqiangdu"
+        android:title="@string/nfc_jyjc_kanyaqiangdu" >
+    </PreferenceScreen>
+	<PreferenceScreen
+        android:key="@string/key_jyjc_kangshengjiance"
+        android:title="@string/nfc_jyjc_kangshengjiance" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_jyjc_qitajiance"
+        android:title="@string/nfc_jyjc_qitajiance" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_jyjc_chuchangjianyan"
+        android:title="@string/nfc_jyjc_chuchangjianyan" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_jyjc_xingshijianyan"
+        android:title="@string/nfc_jyjc_xingshijianyan" >
+    </PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>

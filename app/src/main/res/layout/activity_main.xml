@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.coresoft.rfidread.MainActivity" >
+    
+    <TextView
+        android:id="@+id/RFIDShow"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal|center"/>
+    
+    <GridView
+        android:id="@+id/mineMainview"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_marginTop="5dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dp" >
+    </GridView>
+
+</LinearLayout>

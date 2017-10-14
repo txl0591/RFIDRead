@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceScreen
+        android:key="@string/key_read_jianliqueren"
+        android:title="@string/nfc_read_jianliqueren"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:layout="@layout/preference_list_item_static">
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="@string/key_read_zhibaozhiliao"
+        android:title="@string/nfc_read_zhibaozhiliao"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:layout="@layout/preference_list_item_static">
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_read_jianyanjiance"
+        android:title="@string/nfc_read_jianyanjiance"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:layout="@layout/preference_list_item_static">
+    </PreferenceScreen>
+</PreferenceScreen>

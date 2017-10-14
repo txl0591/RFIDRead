@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+     <string-array name="nfc_devices_name"> 
+        <item>@string/pref_nfc_sys</item> 
+        <item>@string/pref_nfc_ext</item> 
+    </string-array> 
+    <string-array name="nfc_devices_value"> 
+        <item>0</item> 
+        <item>1</item>  
+    </string-array> 
+    <string-array name="nfc_item_zhibaozhiliao">         
+        <item>@string/nfc_zb_shuini</item> 
+        <item>@string/nfc_zb_gangjing</item> 
+        <item>@string/nfc_zb_hunningtuyongsha</item> 
+        <item>@string/nfc_zb_hunningtuyongshi</item> 
+        <item>@string/nfc_zb_kuangzaweifeng</item> 
+        <item>@string/nfc_zb_fengmeihui</item> 
+        <item>@string/nfc_zb_waijiaji</item> 
+        <item>@string/nfc_zb_qita</item> 
+    </string-array>
+    
+    <string-array name="nfc_item_kanyaqiangdu">         
+        <item>@string/nfc_jyjc_kanyaqiangdu</item> 
+        <item>@string/nfc_jyjc_kangshengjiance</item> 
+        <item>@string/nfc_jyjc_qitajiance</item> 
+        <item>@string/nfc_jyjc_chuchangjianyan</item> 
+        <item>@string/nfc_jyjc_xingshijianyan</item> 
+    </string-array>
+
+    <string-array name="login_type_name">
+        <item>@string/login_type_zc</item>
+        <item>@string/login_type_xc</item>
+    </string-array>
+    
+    <string-array name="lihcheng_yanshou">
+        <item>@string/liucheng_buhege</item>
+        <item>@string/liucheng_hege</item>
+    </string-array>
+    <string-array name="lihcheng_chulifangshi">
+        <item>@string/liucheng_null</item>
+        <item>@string/liucheng_tuihui</item>
+    </string-array>
+
+    <string-array name="country_codes" tools:ignore="MissingTranslation">
+        <item>-</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CH</item>
+        <item>CN</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KR</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>SE</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>TR</item>
+        <item>TW</item>
+        <item>US</item>
+    </string-array>
+    <string-array name="preferences_front_light_values" tools:ignore="MissingTranslation">
+        <item>ON</item>
+        <item>AUTO</item>
+        <item>OFF</item>
+    </string-array>
+    <string-array name="preferences_front_light_options">
+        <item>@string/preferences_front_light_on</item>
+        <item>@string/preferences_front_light_auto</item>
+        <item>@string/preferences_front_light_off</item>
+    </string-array>
+</resources>

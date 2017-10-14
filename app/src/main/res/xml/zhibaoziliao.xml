@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:key="Zhibao"
+        android:title="@string/nfc_read_zhibaozhiliao" >    
+    <PreferenceScreen
+        android:key="@string/key_zb_shuini"
+        android:title="@string/nfc_zb_shuini" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_zb_gangjing"
+        android:title="@string/nfc_zb_gangjing" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_zb_hunningtuyongsha"
+        android:title="@string/nfc_zb_hunningtuyongsha" >
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="@string/key_zb_hunningtuyongshi"
+        android:title="@string/nfc_zb_hunningtuyongshi" >
+    </PreferenceScreen>
+	<PreferenceScreen
+        android:key="@string/key_zb_kuangzaweifeng"
+        android:title="@string/nfc_zb_kuangzaweifeng" >
+    </PreferenceScreen>
+	<PreferenceScreen
+        android:key="@string/key_zb_fengmeihui"
+        android:title="@string/nfc_zb_fengmeihui" >
+    </PreferenceScreen>
+	<PreferenceScreen
+        android:key="@string/key_zb_waijiaji"
+        android:title="@string/nfc_zb_waijiaji" >
+    </PreferenceScreen>
+	<PreferenceScreen
+        android:key="@string/key_zb_qita"
+        android:title="@string/nfc_zb_qita" >
+    </PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>

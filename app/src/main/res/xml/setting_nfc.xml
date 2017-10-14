@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:key="NFCSetting"
+        android:title="@string/pref_setting_nfc" >        
+        <ListPreference 
+                android:key="@string/key_nfc_choose"  
+		        android:title="@string/pref_nfc_choose"
+		        android:entries="@array/nfc_devices_name"      
+		        android:entryValues="@array/nfc_devices_value"
+		        android:dialogTitle="@string/pref_nfc_choose"
+		        android:defaultValue="0" />        
+    </PreferenceCategory>  
+
+</PreferenceScreen>
