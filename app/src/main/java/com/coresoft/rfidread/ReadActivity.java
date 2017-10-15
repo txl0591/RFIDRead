@@ -605,23 +605,33 @@ public class ReadActivity extends Activity implements IntentDef.OnFragmentListen
         if(!mRFIDPeiHeBiList.isEmpty()){
             mRFIDPeiHeBiList.clear();
         }
-        mMainClient.GetRFIDPeiHeBi(mRFIDSegmentPart.cJBcode, mRFIDSegmentPart.dShijiDate);
+        if(null != mRFIDSegmentPart && mRFIDSegmentPart.cJBcode != null){
+            mMainClient.GetRFIDPeiHeBi(mRFIDSegmentPart.cJBcode, mRFIDSegmentPart.dShijiDate);
+        }
     }
 
     public void GetYaoHao(){
         if(!mRFIDCaiJiWenDuList.isEmpty()){
             mRFIDCaiJiWenDuList.clear();
         }
-        String Name = mReadPartIFragment.GetPreference(R.string.key_read_yaohao);
-        mMainClient.GetRFIDYaoWenDu(getResources().getString(R.string.wendu_type_yaowen), Name, mRFIDSegmentPart.dRYdate, mRFIDSegmentPart.dCYdate);
+        if(mRFIDSegmentPart != null)
+        {
+            String Name = mReadPartIFragment.GetPreference(R.string.key_read_yaohao);
+            mMainClient.GetRFIDYaoWenDu(getResources().getString(R.string.wendu_type_yaowen), Name, mRFIDSegmentPart.dRYdate, mRFIDSegmentPart.dCYdate);
+        }
+
     }
 
     public void GetShuiYanChi(){
         if(!mRFIDCaiJiWenDuList.isEmpty()){
             mRFIDCaiJiWenDuList.clear();
         }
-        String Name = mReadPartIFragment.GetPreference(R.string.key_read_shuiyangchihao);
-        mMainClient.GetRFIDShuiYanChi(getResources().getString(R.string.wendu_type_shuichi), Name, mRFIDSegmentPart.dRCdate, mRFIDSegmentPart.dCCdate);
+        if(null != mReadPartIFragment){
+            String Name = mReadPartIFragment.GetPreference(R.string.key_read_shuiyangchihao);
+            if(null != Name){
+                mMainClient.GetRFIDShuiYanChi(getResources().getString(R.string.wendu_type_shuichi), Name, mRFIDSegmentPart.dRCdate, mRFIDSegmentPart.dCCdate);
+            }
+        }
     }
 
     public void GetLiuCheng(){
@@ -1007,7 +1017,10 @@ public class ReadActivity extends Activity implements IntentDef.OnFragmentListen
 
         public String GetPreference(int Id){
             Preference mPreference = findPreference(getResources().getString(Id));
-            return mPreference.getSummary().toString();
+            if(mPreference.getSummary() != null){
+                return mPreference.getSummary().toString();
+            }
+            return null;
         }
 
         public void ClearRFID()

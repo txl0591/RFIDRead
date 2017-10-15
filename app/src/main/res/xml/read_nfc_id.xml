@@ -55,25 +55,25 @@
     <PreferenceScreen
         android:key="@string/key_read_gangmobianhao"
         android:title="@string/nfc_read_gangmobianhao"
-        android:icon="@android:drawable/ic_menu_more"
+        android:icon="@drawable/list_more"
         android:layout="@layout/preference_list_item_layout">
     </PreferenceScreen>
     <PreferenceScreen
         android:key="@string/key_read_gujiabianhao"
         android:title="@string/nfc_read_gujiabianhao"
-        android:icon="@android:drawable/ic_menu_more"
+        android:icon="@drawable/list_more"
         android:layout="@layout/preference_list_item_layout">
     </PreferenceScreen>
     <PreferenceScreen
         android:key="@string/key_read_touliaoqingdan"
         android:title="@string/nfc_read_touliaoqingdan"
-        android:icon="@android:drawable/ic_menu_more"
+        android:icon="@drawable/list_more"
         android:layout="@layout/preference_list_item_layout">
     </PreferenceScreen>
 	<PreferenceScreen
         android:key="@string/key_read_yaohao"
         android:title="@string/nfc_read_yaohao"
-        android:icon="@android:drawable/ic_menu_more"
+        android:icon="@drawable/list_more"
         android:layout="@layout/preference_list_item_layout">
     </PreferenceScreen>
 	<PreferenceScreen
@@ -99,7 +99,7 @@
     <PreferenceScreen
         android:key="@string/key_read_shuiyangchihao"
         android:title="@string/nfc_read_shuiyangchihao"
-        android:icon="@android:drawable/ic_menu_more"
+        android:icon="@drawable/list_more"
         android:layout="@layout/preference_list_item_layout">
     </PreferenceScreen>
     <PreferenceScreen
@@ -115,25 +115,25 @@
     <PreferenceScreen
         android:key="@string/key_read_jingchuruchang"
         android:title="@string/nfc_read_jingchuruchang"
-        android:icon="@android:drawable/ic_menu_more"
+        android:icon="@drawable/list_more"
         android:layout="@layout/preference_list_item_layout">
     </PreferenceScreen>
     <PreferenceScreen
         android:key="@string/key_read_duichangyanghu"
         android:title="@string/nfc_read_duichangyanghu"
-        android:icon="@android:drawable/ic_menu_more"
+        android:icon="@drawable/list_more"
         android:layout="@layout/preference_list_item_layout">
     </PreferenceScreen>
     <PreferenceScreen
         android:key="@string/key_read_guanpianxiufu"
         android:title="@string/nfc_read_guanpianxiufu"
-        android:icon="@android:drawable/ic_menu_more"
+        android:icon="@drawable/list_more"
         android:layout="@layout/preference_list_item_layout">
     </PreferenceScreen>
         <PreferenceScreen
             android:key="@string/key_read_chanpinghegezheng"
             android:title="@string/nfc_read_chanpinghegezheng"
-            android:icon="@android:drawable/ic_menu_more"
+            android:icon="@drawable/list_more"
             android:layout="@layout/preference_list_item_layout">
         </PreferenceScreen>
     </PreferenceCategory>
