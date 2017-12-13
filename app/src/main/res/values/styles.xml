@@ -103,4 +103,36 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
+
+    <style name="style_text_title_bar">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/common_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_divider">
+        <item name="android:background">@color/divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+    </style>
+
+    <style name="style_text_input">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">@color/common_text</item>
+        <item name="android:background">@drawable/bg_input_text</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@drawable/edit_cursor</item>
+    </style>
+
+    <style name="style_button">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/common_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:clickable">true</item>
+    </style>
 </resources>

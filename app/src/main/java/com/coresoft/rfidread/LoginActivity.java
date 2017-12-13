@@ -1,13 +1,13 @@
 package com.coresoft.rfidread;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.coresoft.client.MainClient;
 import com.coresoft.database.SysDBHelper;
@@ -21,11 +21,11 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     private EditText login_edit_user = null;
     private EditText login_edit_name = null;
     private EditText login_edit_ltd = null;
-    private Spinner login_edit_type = null;
+    private EditText login_edit_type = null;
     private EditText login_edit_userid = null;
 
-    private Button login_in = null;
-    private Button login_out = null;
+    private TextView login_in = null;
+    private TextView login_out = null;
     private MainClient mainClient = null;
 
     @Override
@@ -36,12 +36,12 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         login_edit_user = (EditText)findViewById(R.id.login_edit_user);
         login_edit_name = (EditText)findViewById(R.id.login_edit_name);
         login_edit_ltd = (EditText)findViewById(R.id.login_edit_ltd);
-        login_edit_type = (Spinner)findViewById(R.id.login_edit_type);
+        login_edit_type = (EditText)findViewById(R.id.login_edit_type);
         login_edit_userid = (EditText)findViewById(R.id.login_edit_userid);
 
-        login_in = (Button)findViewById(R.id.login_in);
+        login_in = (TextView)findViewById(R.id.btn_login);
         login_in.setOnClickListener(this);
-        login_out = (Button)findViewById(R.id.login_out);
+        login_out = (TextView)findViewById(R.id.btn_logout);
         login_out.setOnClickListener(this);
     }
 
@@ -59,12 +59,12 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch(v.getId()){
-            case R.id.login_in:
+            case R.id.btn_login:
                 SysDBHelper.SetLoginInState(true);
                 finish();
                 break;
 
-            case R.id.login_out:
+            case R.id.btn_logout:
                 finish();
                 break;
         }

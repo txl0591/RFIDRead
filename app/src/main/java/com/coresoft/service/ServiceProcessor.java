@@ -286,11 +286,15 @@ public class ServiceProcessor implements IntentDef.OnSqlReportListener {
         }
     }
 
-    public void GetRFIDReport(String Type, String chuanhao)
+    public void GetRFIDReport(String Type, String chuanhao, String cManufacture)
     {
         if(mOfflineUsed == false)
         {
-            String Url = "select b.* from sp_reporter a,sp_Image b where a.SP_pid=b.SP_pid and a.cBGinfo1<= \'"+ chuanhao+"\' and a.cBGinfo2>= \'"+ chuanhao + "\' AND a.creportstype= \'" + Type+"\'";
+            String DEM = "select b.* from sp_reporter a,sp_Image b where a.crptUUID=b.c_Report_UUID and cast(a.cBGinfo1 as int)<= '100' and cast(a.cBGinfo2 as int)>= '100' AND a.creportstype= '06'  AND a.cManufacture= '...'";
+            String Url = "select b.* from sp_reporter a,sp_Image b where a.crptUUID=b.c_Report_UUID and cast(a.cBGinfo1 as int)<= \'"+ chuanhao+"\' and cast(a.cBGinfo2 as int) >= \'"+ chuanhao + "\' AND a.creportstype= \'" + Type+"\' AND a.cManufacture = \'" + cManufacture + "\'";
+
+            nlog.Info("GetRFIDReport ["+Url+"]");
+
             mMySql.Exec(MySQLBase.SQL_OPER.SQL_RFID_REPORTFILE,Url);
         }else{
             EchoError();
@@ -329,7 +333,7 @@ public class ServiceProcessor implements IntentDef.OnSqlReportListener {
         }
     }
 
-    public void GetRFIDLiucheng(String ChipId)
+    public void GetRFIDLiucheng(String ChipId, String cManufacture)
     {
         if(mOfflineUsed == false)
         {

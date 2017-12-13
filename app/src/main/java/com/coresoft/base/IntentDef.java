@@ -31,8 +31,8 @@ public class IntentDef {
 	public static final String INTENT_COMM_PARAM			="rfid.intent.netcomm.PARAM";
 	public static final int    INTENT_TYPE_INVALID        = -1;
 
-	public static final String INTENT_DOWNLOAD_ADDR 			= "http://268212.iask.in:43482/download.ashx?filename=";
-	public static final String INTENT_UPLOAD_ADDR 			= "http://268212.iask.in:43482/Upload.ashx";
+	public static final String INTENT_DOWNLOAD_ADDR 			= "http://47.100.126.101:80/download.ashx?filename=";
+	public static final String INTENT_UPLOAD_ADDR 			= "http://47.100.126.101:80/Upload.ashx";
 
 	public final static String DEFAULT_DIR = "CoreSoft";
 	public final static String ACTIVITY_MESSAGE_URL = "ACTIVITY_MESSAGE_URL";

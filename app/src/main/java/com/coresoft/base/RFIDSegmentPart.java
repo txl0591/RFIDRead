@@ -35,6 +35,13 @@ public class RFIDSegmentPart implements Serializable {
 	public String cJBcode;
 	public Timestamp dRCdate;
 	public Timestamp dCCdate;
+	public String cManufacture;
+	public String cjingshi;
+	public String cPHBUUID;
+	public String cTuoMoQiWen;
+	public String cTuoMoWenDu;
+	public String rumowendu;
+	public String gangwangjia;
 	
 	public RFIDSegmentPart(ResultSet Rst)
 	{
@@ -67,6 +74,15 @@ public class RFIDSegmentPart implements Serializable {
 			dRCdate = Rst.getTimestamp("dRCdate");
 			dCCdate = Rst.getTimestamp("dCCdate");
 			cJBcode = Rst.getString("cJBcode");
+			cManufacture = Rst.getString("cManufacture");
+			cjingshi  = Rst.getString("cjingshi");
+
+			cPHBUUID = Rst.getString("cPHBUUID");
+			cTuoMoQiWen = Rst.getString("cTuoMoQiWen");
+			cTuoMoWenDu = Rst.getString("cTuoMoWenDu");
+			rumowendu = Rst.getString("rumowendu");
+			gangwangjia = Rst.getString("gangwangjia");
+
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

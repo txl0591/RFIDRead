@@ -181,6 +181,8 @@ public class DisplayActivity extends Activity implements OnPageChangeListener, O
             imageView.setVisibility(View.VISIBLE);
             pdfView.setVisibility(View.INVISIBLE);
             displayImageFromFile(FileFull);
+        } else if (fileType.equals("edc")|| fileType.equals("EDC")){
+
         }
     }
 

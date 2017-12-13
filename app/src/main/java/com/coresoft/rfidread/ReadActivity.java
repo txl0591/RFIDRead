@@ -22,6 +22,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.coresoft.base.Common;
@@ -115,6 +116,7 @@ public class ReadActivity extends Activity implements IntentDef.OnFragmentListen
             IntentDef.RFIDReportType.ReportType_kuangzhafengzhibao,
             IntentDef.RFIDReportType.ReportType_fengmeihuizhibao,
             IntentDef.RFIDReportType.ReportType_waijiajizhibao,
+            IntentDef.RFIDReportType.ReportType_hunningtuzhibao,
             IntentDef.RFIDReportType.ReportType_qitazhibaoshu
     };
 
@@ -508,8 +510,8 @@ public class ReadActivity extends Activity implements IntentDef.OnFragmentListen
     public void OnFragmentReport(String Id) {
         if(Id.equals(getResources().getString(R.string.key_read_chipid)))
         {
-//            mHandler.sendEmptyMessage(SHOW_RFID_ZXING);
-            StartZxing();
+            mHandler.sendEmptyMessage(SHOW_RFID_ZXING);
+            //StartZxing();
         }else if(Id.equals(getResources().getString(R.string.key_read_zhibaozhiliao))){
             ShowChooseList(R.array.nfc_item_zhibaozhiliao);
         }else if(Id.equals(getResources().getString(R.string.key_read_jianyanjiance))){
@@ -554,39 +556,33 @@ public class ReadActivity extends Activity implements IntentDef.OnFragmentListen
         mAlertDialog.setIcon(android.R.drawable.ic_dialog_info);
         mAlertDialog.setView(LogView);
         final EditText mEditID = (EditText) LogView.findViewById(R.id.EditID);
-        Button mSuccess = (Button)findViewById(R.id.ButtonOk);
-//        mSuccess.setOnClickListener(new Button.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
-        Button mCancle = (Button)findViewById(R.id.ButtonCancle);
+        Button mSuccess = (Button)LogView.findViewById(R.id.ButtonOk);
+        mSuccess.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                    mReadPartIFragment.gCardNumPreference().setSummary(mEditID.getText().toString());
+                    mCardNum = Long.parseLong(mEditID.getText().toString());
+                    mMainClient.GetRFIDSegmentPartFromNet(mEditID.getText().toString());
+                    ShowWaitDialog();
+                    mAlertDialogShow.dismiss();
+            }
+        });
+        Button mCancle = (Button)LogView.findViewById(R.id.ButtonCancle);
         mCancle.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View v) {
-
+                mAlertDialogShow.dismiss();
             }
         });
-        Button zxing = (Button)findViewById(R.id.zxing);
+        Button zxing = (Button)LogView.findViewById(R.id.zxing);
         zxing.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View v) {
-
+                StartZxing();
+                mAlertDialogShow.dismiss();
             }
         });
 
-//            mAlertDialog.setPositiveButton(R.string.button_ok, new DialogInterface.OnClickListener(){
-//                @Override
-//                public void onClick(DialogInterface arg0, int arg1) {
-//                    // TODO Auto-generated method stub
-//                    mReadPartIFragment.gCardNumPreference().setSummary(mEditID.getText().toString());
-//                    mCardNum = Long.parseLong(mEditID.getText().toString());
-//                    mMainClient.GetRFIDSegmentPartFromNet(mEditID.getText().toString());
-//                    ShowWaitDialog();
-//                }
-//            });
-//            mAlertDialog.setNegativeButton(R.string.button_err,  null );
         mAlertDialog.create();
         mAlertDialogShow = mAlertDialog.show();
         Timer timer = new Timer();
@@ -599,6 +595,7 @@ public class ReadActivity extends Activity implements IntentDef.OnFragmentListen
             }
 
         }, 50);
+        mAlertDialogShow.setCanceledOnTouchOutside(true);
     }
 
     public void GetTouliaoqingdan(){
@@ -638,8 +635,11 @@ public class ReadActivity extends Activity implements IntentDef.OnFragmentListen
         if(!mRFIDLiuChengList.isEmpty()){
             mRFIDLiuChengList.clear();
         }
-        ShowWaitDialog();
-        mMainClient.GetRFIDLiucheng(String.valueOf(mCardNum));
+
+        if(null != mRFIDSegmentPart) {
+            ShowWaitDialog();
+            mMainClient.GetRFIDLiucheng(String.valueOf(mCardNum), mRFIDSegmentPart.cManufacture);
+        }
     }
 
     public void GetReportList(String Id){
@@ -651,8 +651,11 @@ public class ReadActivity extends Activity implements IntentDef.OnFragmentListen
             Toast.makeText(getApplicationContext(), R.string.toast_hit_link_error, Toast.LENGTH_SHORT).show();
         }else {
             mSQLCmd = INTENT_COMM_CMD_SQL_RFID_REPORTFILE;
-            ShowWaitDialog();
-            mMainClient.GetRFIDReport(String.valueOf(Id), "100");
+
+            if(null != mRFIDSegmentPart){
+                ShowWaitDialog();
+                mMainClient.GetRFIDReport(String.valueOf(Id), mRFIDSegmentPart.cShengchanID,mRFIDSegmentPart.cManufacture);
+            }
         }
     }
 
@@ -893,48 +896,6 @@ public class ReadActivity extends Activity implements IntentDef.OnFragmentListen
     public void OnDistributeReport(int Cmd, Bundle Data, int DataLen) {
 
     }
-
-//    @Override
-//    public void onClick(View v) {
-//        switch(v.getId()){
-//            case R.id.positiveButton:
-//                mReadPartIFragment.gCardNumPreference().setSummary(mEditID.getText().toString());
-//                mCardNum = Long.parseLong(mEditID.getText().toString());
-//                mMainClient.GetRFIDSegmentPartFromNet(mEditID.getText().toString());
-////                mAlertDialogShow.dismiss();
-//                ShowWaitDialog();
-//                break;
-//
-//            case R.id.negativeButton:
-////                mAlertDialogShow.dismiss();
-//                break;
-//
-//            case R.id.zxing:
-////                mAlertDialogShow.dismiss();
-//                StartZxing();
-//                break;
-//        }
-//    }    @Override
-//    public void onClick(View v) {
-//        switch(v.getId()){
-//            case R.id.positiveButton:
-//                mReadPartIFragment.gCardNumPreference().setSummary(mEditID.getText().toString());
-//                mCardNum = Long.parseLong(mEditID.getText().toString());
-//                mMainClient.GetRFIDSegmentPartFromNet(mEditID.getText().toString());
-////                mAlertDialogShow.dismiss();
-//                ShowWaitDialog();
-//                break;
-//
-//            case R.id.negativeButton:
-////                mAlertDialogShow.dismiss();
-//                break;
-//
-//            case R.id.zxing:
-////                mAlertDialogShow.dismiss();
-//                StartZxing();
-//                break;
-//        }
-//    }
 
     /**
      *  ReadPartIIFragment

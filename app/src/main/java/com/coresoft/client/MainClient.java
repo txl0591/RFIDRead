@@ -46,11 +46,11 @@ public class MainClient extends BaseClient {
         mMainService.GetRFIDSegmentFormNet(ID);
     }
 
-    public void GetRFIDReport(String Type, String chuanhao) {mMainService.GetRFIDReport(Type,chuanhao);}
+    public void GetRFIDReport(String Type, String chuanhao,String cManufacture) {mMainService.GetRFIDReport(Type,chuanhao,cManufacture);}
 
-    public void GetRFIDLiucheng(String ChipId)
+    public void GetRFIDLiucheng(String ChipId,String cManufacture)
     {
-        mMainService.GetRFIDLiucheng(ChipId);
+        mMainService.GetRFIDLiucheng(ChipId,cManufacture);
     }
 
     public void InsertLiucheng(RFIDLiuCheng liucheng){ mMainService.InsertLiucheng(liucheng);   }

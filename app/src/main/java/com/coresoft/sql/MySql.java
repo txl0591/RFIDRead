@@ -14,7 +14,7 @@ import com.coresoft.utils.nlog;
 public class MySql implements OnSqlReportListener {
 
 	private Context mContext = null;
-	private final static String URL = "jdbc:jtds:sqlserver://738233.cicp.net:25938/SThree";
+	private final static String URL = "jdbc:jtds:sqlserver://47.100.126.101:1433/SThree";
 	private final static String NAME = "sa";
 	private final static String PASSWORD = "905E27CF6F8CCF0CF5259F9B3DCE1F";
 	public OnSqlReportListener mOnSqlReportListener = null;

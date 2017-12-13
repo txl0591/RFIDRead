@@ -81,17 +81,17 @@ public class MainService extends Service {
         }
     }
 
-    public void GetRFIDReport(String Type, String chuanhao)
+    public void GetRFIDReport(String Type, String chuanhao,String cManufacture)
     {
         if(mServiceProcessor != null){
-            mServiceProcessor.GetRFIDReport(Type,chuanhao);
+            mServiceProcessor.GetRFIDReport(Type,chuanhao,cManufacture);
         }
     }
 
-    public void GetRFIDLiucheng(String ChipId)
+    public void GetRFIDLiucheng(String ChipId,String cManufacture)
     {
         if(mServiceProcessor != null){
-            mServiceProcessor.GetRFIDLiucheng(ChipId);
+            mServiceProcessor.GetRFIDLiucheng(ChipId,cManufacture);
         }
     }
 

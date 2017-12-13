@@ -1,97 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:text="@string/app_name" android:layout_centerInParent="true" style="@style/style_text_title_bar" />
+    </RelativeLayout>
+    <View style="@style/style_divider" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="20.0dip">
+        <EditText android:id="@+id/login_edit_user" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/login_user" style="@style/style_text_input" />
+        <EditText android:id="@+id/login_edit_name" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/login_name" style="@style/style_text_input" />
+        <EditText android:id="@+id/login_edit_ltd" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/login_ltd" style="@style/style_text_input" />
+        <EditText android:id="@+id/login_edit_type" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/login_type" style="@style/style_text_input" />
+        <EditText android:id="@+id/login_edit_userid" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/login_userid" style="@style/style_text_input" />
 
-    <TextView
-        android:id="@+id/login_text_user"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:textSize="16dp"
-        android:text="@string/login_user"
-        />
-    <EditText
-        android:id="@+id/login_edit_user"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"/>
-
-    <TextView
-        android:id="@+id/login_text_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:textSize="16dp"
-        android:text="@string/login_name"
-        />
-    <EditText
-        android:id="@+id/login_edit_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"/>
-
-    <TextView
-        android:id="@+id/login_text_ltd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:textSize="16dp"
-        android:text="@string/login_ltd"
-        />
-    <EditText
-        android:id="@+id/login_edit_ltd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"/>
-
-    <TextView
-        android:id="@+id/login_text_type"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:textSize="16dp"
-        android:text="@string/login_type"
-        />
-    <Spinner
-        android:id="@+id/login_edit_type"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/login_type_name"
-        android:layout_marginLeft="20dp"/>
-
-    <TextView
-        android:id="@+id/login_text_userid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:textSize="16dp"
-        android:text="@string/login_userid"
-        />
-    <EditText
-        android:id="@+id/login_edit_userid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"/>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/login_in"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="@string/login_in"
-            />
-        <Button
-            android:id="@+id/login_out"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="@string/login_out"
-            />
     </LinearLayout>
-
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:id="@+id/btn_login" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="@string/login_in" android:layout_weight="1.0" style="@style/style_button" />
+        <Space android:layout_width="8.0dip" android:layout_height="1.0dip" />
+        <TextView android:id="@+id/btn_logout" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="@string/login_out" android:layout_weight="1.0" style="@style/style_button" />
+    </LinearLayout>
 </LinearLayout>

@@ -15,7 +15,8 @@
         <item>@string/nfc_zb_hunningtuyongshi</item> 
         <item>@string/nfc_zb_kuangzaweifeng</item> 
         <item>@string/nfc_zb_fengmeihui</item> 
-        <item>@string/nfc_zb_waijiaji</item> 
+        <item>@string/nfc_zb_waijiaji</item>
+        <item>@string/nfc_zb_hunningtu</item>
         <item>@string/nfc_zb_qita</item> 
     </string-array>
     

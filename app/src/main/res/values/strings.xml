@@ -25,7 +25,7 @@
     <string name="pref_title_card_info">管片详情</string>
     <string name="nfc_read_chipid">芯片ID</string> 
     <string name="nfc_read_shengchengdangwei">生产单位</string>
-    <string name="nfc_read_gongchengmingcheng">工程名称</string>
+    <string name="nfc_read_gongchengmingcheng">警示信息</string>
     <string name="nfc_read_guanpianleixing">管片类型</string>
     <string name="nfc_read_huanhao">环号</string>
     <string name="nfc_read_fenkuaihao">分块号</string>
@@ -36,7 +36,7 @@
     <string name="nfc_read_rumohunningtubiaomianwendu">入模温度</string>
     <string name="nfc_read_gangmobianhao">钢模编号</string>  
     	<string name="nfc_read_gangmojiance">钢模检测</string> 
-    <string name="nfc_read_gujiabianhao">骨架编号</string>
+    <string name="nfc_read_gujiabianhao">网架编号</string>
 		<string name="nfc_jyjc_gangwangjiajiance">骨架检测</string>
     <string name="nfc_read_touliaoqingdan">投料清单</string>
     <string name="nfc_read_yaohao">窑号</string>
@@ -54,7 +54,7 @@
     <string name="nfc_read_guanpianxiufu">管片修复</string>
     <string name="nfc_read_jianliqueren">管片状态</string>
 
-    <string name="nfc_read_zhibaozhiliao">质保资料</string>
+    <string name="nfc_read_zhibaozhiliao">验收资料</string>
 		<string name="nfc_zb_shuini">水泥</string>
 		<string name="nfc_zb_gangjing">钢筋</string>
 		<string name="nfc_zb_hunningtuyongsha">混凝土用砂</string>
@@ -62,6 +62,7 @@
 		<string name="nfc_zb_kuangzaweifeng">矿渣微粉</string>
 		<string name="nfc_zb_fengmeihui">粉煤灰</string>
 		<string name="nfc_zb_waijiaji">外加剂</string>
+        <string name="nfc_zb_hunningtu">混凝土</string>
 		<string name="nfc_zb_qita">其他资料</string>
 
     <string name="nfc_read_jianyanjiance">检验检测</string>
